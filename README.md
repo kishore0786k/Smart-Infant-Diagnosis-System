@@ -43,7 +43,7 @@ Smart-Infant-Diagnosis-System/
 
 ## How to run the project
 1. Clone the repository  
-```bash
+``'bash
 git clone https://github.com/kishore0786k/Smart-Infant-Diagnosis-System.git
 
 2.Install required libraries
@@ -51,6 +51,8 @@ pip install -r requirements.txt
 
 3.Run the main program
 python main.py
+
+---
 
 Output:
 Classified infant cry patterns
