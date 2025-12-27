@@ -1,71 +1,95 @@
 # Smart Infant Diagnosis System
 
-This project is based on the idea that an infant’s cry carries useful information about their condition. Since infants cannot communicate verbally, cry analysis can help in understanding possible discomfort or needs at an early stage.
+This project focuses on analyzing infant cry audio signals to understand different infant states and possible discomfort conditions. Since infants cannot communicate verbally, their cries contain patterns that can be studied using signal processing and machine learning techniques.
 
-In this project, infant cry audio signals are processed and analyzed using Python. Relevant audio features are extracted from the cry signals, and a machine learning model is used to classify different cry patterns. The system is intended to support observation and learning, not to replace medical diagnosis.
-
----
-
-## Why this project?
-Newborn monitoring mainly depends on human interpretation, which can vary from person to person. This project explores how data-driven techniques can assist in understanding infant cry behavior in a more consistent way.
+The system processes raw audio input, extracts meaningful acoustic features, and applies a machine learning model to classify cry patterns. The aim of this project is to support learning and early-stage observation, not to replace professional medical diagnosis.
 
 ---
 
-## What this system does
-- Takes infant cry audio as input  
-- Preprocesses the audio and removes noise  
-- Extracts important acoustic features  
-- Uses a machine learning model to classify cry patterns  
-- Displays classification results and basic performance metrics  
+## Problem Background
+
+Monitoring infant health largely depends on human interpretation, which can vary based on experience and attention. This project explores how a data-driven approach can assist in understanding infant cry behavior in a more consistent and analytical way.
 
 ---
 
-## Technologies used
-- Python  
-- NumPy, Pandas  
-- Librosa for audio processing  
-- Scikit-learn for machine learning  
-- Matplotlib / Seaborn for visualization  
+## What the System Does
+
+* Accepts infant cry audio as input
+* Performs audio preprocessing and basic noise handling
+* Extracts relevant acoustic features from the signal
+* Classifies cry patterns using a machine learning model
+* Generates basic evaluation results and visualizations
 
 ---
 
-## Project structure
+## Technologies Used
+
+* Python
+* NumPy, Pandas
+* Librosa for audio signal processing
+* Scikit-learn for machine learning
+* Matplotlib / Seaborn for result visualization
+
+---
+
+## Project Structure
+
+```
 Smart-Infant-Diagnosis-System/
-├── data/ # Dataset (not included if large)
-├── src/ # Source code files
-├── models/ # Trained model files
-├── results/ # Output graphs and results
+├── data/            # Dataset (excluded if large)
+├── src/             # Source code files
+├── models/          # Trained model files
+├── results/         # Output graphs and evaluation results
 ├── requirements.txt
 └── README.md
-
+```
 
 ---
 
-## How to run the project
-1. Clone the repository  
-``'bash
+## How to Run
+
+1. Clone the repository
+
+```bash
 git clone https://github.com/kishore0786k/Smart-Infant-Diagnosis-System.git
+```
 
-2.Install required libraries
+2. Install dependencies
+
+```bash
 pip install -r requirements.txt
+```
 
-3.Run the main program
+3. Run the main script
+
+```bash
 python main.py
+```
 
 ---
 
-Output:
-Classified infant cry patterns
-Accuracy and evaluation graphs
-Visual representation of results
+## Output
 
-Limitations:
-The model depends on the quality and size of the dataset
-Results are for learning and analysis purposes only
-Not suitable for real-world medical decision making
+* Classified infant cry patterns
+* Model performance metrics
+* Graphical representation of results
 
-Disclaimer:
-This project is developed for educational and research purposes. It should not be considered as a medical diagnosis system.
+---
 
-Author
+## Limitations
+
+* Performance depends on dataset quality and size
+* Results are intended for academic and learning purposes
+* Not suitable for real-world medical decision making
+
+---
+
+## Disclaimer
+
+This project is developed strictly for educational and research purposes and should not be used as a medical diagnosis tool.
+
+---
+
+## Author
+
 Kishore
